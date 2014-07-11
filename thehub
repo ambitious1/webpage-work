@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="../hub/css/the_hub.css" rel="stylesheet" type="text/css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$( document ).ready( function() {
+				var $body = $('body'); //Cache this for performance
+				
+				var setBodyScale = function() {
+					var scaleFactor = 0.35,
+						scaleSource = $body.width(),
+						maxScale = 500,
+						minScale = 10;
+
+					var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
+
+					if (fontSize > maxScale) fontSize = maxScale;
+					if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
+
+					$('body').css('font-size', fontSize + '%');
+				}
+			
+			    $(window).resize(function(){
+					setBodyScale();
+				});
+				
+				//Fire it when the page first loads:
+				setBodyScale();
+			});
+		</script>
+        
+<script type="text/javascript" src="http://static.tumblr.com/3ikgvxs/0TGl4zgpu/jquery.min.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+$(".links_body").hide(); 
+$(".links_head").click(function(){ 
+$(this).next(".links_body").slideToggle('fast'); 
+}); }); </script> 
+<style type="text/css"> 
+.links_list { margin:0px; padding:0px; width:7%; margin-right:8%;} 
+.links_head { padding-top:5px; padding-bottom:5px; cursor:pointer; position:relative; margin:1px; text-align:center; width:117%; margin-left:-19%; } 
+.links_body { padding=25%; text-align:left; color: #fff; display:none; font-size:0.33em; font-family:"GillSans Light";background-color: #999; margin-top:-22%; margin-left:0%; width:174%; } 
+div.links_body a:link{
+	background-color: transparent;
+	text-decoration:none;
+	
+}
+</style>
+</head>
+
+<body>
+
+<div class="the_hub_background">
+<img src="../hub/images/the_hub_background.png" alt="" class="the_hub_background_pic"/>
+</div>
+
+<div class="top_nav_bar">
+<img class="top_headline" src="../hub/images/top_headline.png"/>
+<input type="search" name="websearch" class="search_box" placeholder="Search">
+
+<div class="links_list"> 
+<img src="../hub/images/top_menu_button.png" class="links_head"> 
+	<div class="links_body"> 
+	<center> 
+	<a href="LINK URL">LINK TITLE</a>
+	<a href="LINK URL">LINK TITLE</a>
+	<a href="LINK URL">LINK TITLE</a>
+	<a href="LINK URL">LINK TITLE</a>
+	</center> 
+	</div>
+</div>
+
+</div>
+
+<div class="tab">
+	<table width="170%" border="0"  bgcolor="#54C3BD" style="border-radius:15px; border-color:#54C3BD;  text-align:center;">
+  <tr>
+    <td style="border-right-color:#FFF;"><a href="#" class="mywrev_tab">mywrevs</a></td>
+    <td><a href="#" class="hub_tab"> the hub</a></td>
+    <td><a href="#" class="showroom_tab"> showroom</a></td>
+  </tr>
+</table>
+</div>
+
+<div class="latest_wrevs_section">
+	<img src="../hub/images/latest_wrevs_section.png" class="latest_wrevs_section_pic"> 
+    <input type="search" name="websearch" class="search_wrev" placeholder="search name of wrev">
+	<select class="type_of_wrev" >
+		<option value="type">type</option>
+		<option value="icebreakers">icebreakers</option>
+    	<option value="parties">parties</option>
+	</select>
+	<select class="price" >
+		<option value="price">price</option>	
+	</select>
+	<input type="search" name="websearch" class="search_location" placeholder="New York, NY">
+    <a href="#"><img class="view_button1" src="../hub/images/latest_wrevs_view_more_button.png"/></a>
+</div>
+
+
+
+<div class="createa_wrev_1outof3">
+	<img src="../hub/images/createa_wrev_1outof3.png" class="createa_wrev_1outof3_pic"> 
+</div>
+
+<div class="groups_section">
+	<img src="../hub/images/groups_section.png" class="groups_section_pic"> 
+    <input type="search" name="websearch" class="search_group" placeholder="search name of group">
+    <select class="type_of_group" >
+		<option value="type">type</option>
+	</select>
+    <input type="search" name="websearch" class="group_location" placeholder="New York, NY">
+</div>
+
+
+
+
+<div class="newsfeed_section">
+	<img src="../hub/images/newsfeed_section.png" class="newsfeed_section_pic"> 
+    <input type="search" name="websearch" class="newsfeed_search_box" placeholder="Search">
+    <input type="text" name="websearch" class="newsfeed_post_box" placeholder="post something">
+</div>
+
+
+<a href="#"><img class="view_button2" src="../hub/images/groups_view_more_button.png"/></a>
+
+</body>
+</html>
