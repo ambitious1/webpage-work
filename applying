@@ -1,0 +1,62 @@
+<!doctype html >
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Open Positions</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=12.0, minimum-scale=1.0, user-scalable=yes"/>
+<link href="../careers2/css/test.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="http://www.formmail-maker.com/var/demo/jquery-popup-form/colorbox.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://www.formmail-maker.com/var/demo/jquery-popup-form/jquery.colorbox-min.js"></script>
+
+<script>
+            $(document).ready(function(){
+                $(".iframe").colorbox({iframe:true, fastIframe:false, width:"450px", height:"550px", transition:"fade", scrolling   : false});
+            });
+        </script>
+        
+        
+        <style>
+            #cboxOverlay{ background:#666666; }
+        </style>		
+		
+</head>
+
+<body>
+
+<div class="header_container">
+	<img src="../careers2/images/careerheader.png" class="header"/>
+</div>
+
+<div class="departments">
+
+    <a class='iframe' href="../careers2/application.html" ><img src="../careers2/images/engineering.png" class="engineering"/></a>
+
+    <a class='iframe' href="../careers2/application.html" ><img src="../careers2/images/media.png" class="media" /></a>
+
+</div>
+
+<div class="open_circle">
+<img src="../careers2/images/open.png" class="open" />
+</div>
+
+<div class="departments2">
+
+    <a class='iframe' href="../careers2/application.html" ><img src="../careers2/images/pr.png" class="pr"/></a>
+    
+	<a class='iframe' href="../careers2/application.html"><img src="../careers2/images/marketing.png" class="marketing"/></a>
+
+</div>
+
+<div class="text">
+<img src="../careers2/images/werelooking_text_image.png" class="text_image"/>
+</div>
+</div>
+
+<div class="links">
+  <hr width=50%>
+<a href="" style="width:10%">About Us</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+</body>
+</html>
